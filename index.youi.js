@@ -14,17 +14,17 @@ import {
   Text,
   View
 } from 'react-native';
-import {
-  ButtonRef,
-  Composition,
-  ImageRef,
-  TextRef,
-  TimelineRef,
-  ViewRef
-} from 'react-native-youi';
+// import {
+//   ButtonRef,
+//   Composition,
+//   ImageRef,
+//   TextRef,
+//   TimelineRef,
+//   ViewRef
+// } from 'react-native-youi';
 
 import movies from './movies.js'
-
+import App from "./App";
 export default class YiReactApp extends Component {
 
   constructor() {
@@ -140,4 +140,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('YiReactApp', () => YiReactApp);
+AppRegistry.registerComponent('YiReactApp', () => App);

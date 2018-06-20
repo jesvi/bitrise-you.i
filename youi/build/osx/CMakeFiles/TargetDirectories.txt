@@ -1,0 +1,8 @@
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/BundleJS.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/CopyAssets.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/TemplateProject_Yarn.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/TemplateProject.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/CleanAssets.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/ProcessLocalizationData.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/ALL_BUILD.dir
+/Users/juan.villa/Documents/youi/bitrise-youi/youi/build/osx/CMakeFiles/ZERO_CHECK.dir

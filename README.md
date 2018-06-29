@@ -1,3 +1,100 @@
+## Initial Installation
+
+
+We are using a software repository called Artifactory to securely send software packages. Artifactory securely stores the packages and enables them to be downloaded by anyone with the appropriate Artifactory permissions. A hash-key is provided in this email which you can use for access.  Follow the instructions below to get your package from Artifactory server.
+
+
+A pre-requisite for the steps below is to have the command line tool called yarn installed. It is assumed that the reader is familiar with how to install it for either the Windows or Mac OS X operating system.
+
+Perform the following steps:
+
+If you haven't already done so, install the following dependencies using a terminal via the command line:
+
+* `yarn global add youi-cli`
+
+Ensure you're using the latest version of the software via the command:
+
+* `yarn global upgrade youi-cli`
+
+Last step, install the You.i Engine software:
+
+* `youi-tv install`
+
+
+The software will prompt you to input an API key or a username to access the drop. 
+The hash-key is as follows: `Request for a key to your lead`
+
+A new directory called
+youiengine
+ is created under your home directory. For example, if you ran the installation software from
+your
+ desktop, /home/<useraccount>/youiengine
+ is created.
+
+After this, you can move on to the setup phase. To open the associated documentation,
+ enter the command:
+
+
+
+youi-tv docs
+
+
+
+This should open a browser window and present you with the setup instructions
+
+---
+
+Features
+
+Packaging
+This drop will feature a new way to download and install your You.i Engine powered React Native SDK. Even though the experience is still needing some polish, we think it’s much improved over our last drop.
+
+Application Navigation
+The commonly used third-party package ‘react-navigation’ is now working (beta support at the moment). At this time, this is our recommended method for handling routing and screen navigations. We are currently working on support for deep linking, so functionality related to that won’t be working until a later drop.
+
+Error Reporting
+The infamous red screen of death has gotten a bit of polish and minor improvements. It was showing up a little too often in prior releases, so we have toned it down a bit in response to your feedback.
+
+Lists
+Bug fixes for FlatList. We recognize that components like FlatList are core to the development experience when using React Native and building video applications, so you can expect to see improvements for a while yet. SectionList is still in development and will not make it into the next drop.
+
+Slider
+Support for the slider component is now available.
+
+Networking
+Network socket support has been completed. Secure sockets still need to be wrapped up and won’t be available for Drop 4.
+
+AE Workflow
+Compositions in a flex layout were fixed-width only in the last drop, but the are now  able to respond to changes in layout size dynamically.
+Miscellaneous
+The AppState component is fully supported now.
+Support for BackHandler has been added.
+Improvements to the Image component include support for local image loading, and support for the contain resize mode.
+Platforms
+
+Xbox One
+Build support for Xbox One has been completed (some issues remain - see below). Some functional areas, such as input handling or focus navigation may be incomplete.
+
+Performance
+Performance is a huge area of focus for us, and has always been a major theme for our C++ SDK. Participants in our EA programme have been very helpful in pointing out use cases they have noticed, and when coupled with our in-house performance testing, it has really helped to tune our performance plan. It is very much an on-going effort and every future drop and release will continue to see improvements in this area.
+
+Build
+With the introduction of our React Native SDK, it has introduced some key new functionality and changes to how our C++ build system works. These changes may not have a large impact on projects using React Native, but it is important to realize that our React Native build system implementation is driven by CMake and may affect common build tasks.
+
+---
+
+Known Issues
+Packaging assets for UWP has a known issue whereby an application's assets are not injected into the build pipeline correctly. It currently affects both remote and local asset bundling for React Native. Using the workaround in the setup instructions will allow you to run the application, if it has been deployed to another machine. This issue is expected to be fixed in a future update.
+
+An intermittent build issue affecting the UWP platform. The cause is unknown at this time and does not affect all machines. This issue is expected to be fixed in a future update.
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
